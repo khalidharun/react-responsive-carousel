@@ -150,7 +150,7 @@ class Carousel extends Component {
     setupCarousel () {
         this.bindEvents();
 
-        if (this.state.autoPlay && Children.count(this.props.children) > 1) {
+        if (this.state.autoPlay) {
             this.setupAutoPlay();
         }
 
